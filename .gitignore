@@ -3,4 +3,8 @@ LICENSE.txt
 README.txt
 demos/
 extras/documentation
-
+vendor
+data
+/nbproject/private/
+nbproject
+composer.phar
