@@ -16,9 +16,7 @@ return array(
         'driver' => array(
             'orm_default' => array(
                 'class'   => 'Doctrine\ORM\Mapping\Driver\DriverChain',
-                'drivers' => array(
-                    'Application\Entity' => 'application_driver'
-                ),
+                'drivers' => array(),
             )
         ),
     )
