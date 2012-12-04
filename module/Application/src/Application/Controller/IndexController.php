@@ -16,13 +16,14 @@ use Zend\Mvc\Controller\AbstractActionController,
 
 class IndexController extends AbstractActionController
 {
-    public function getEntityManager() {                
+    public function getEntityManager() {
         return $this->getServiceLocator()->get('doctrine.entitymanager.orm_default');
     }
 
     public function indexAction()
     {
-        $this->getEntityManager();
+        $entity = new \Application\Entity\User;
+        $this->getEntityManager()->getRepository('Application\Entity\User');
 
         return new ViewModel();
     }
