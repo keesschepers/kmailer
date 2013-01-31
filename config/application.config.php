@@ -2,8 +2,10 @@
 return array(
     'modules' => array(
         'Application',
+        'General',
         'DoctrineModule',
-        'DoctrineORMModule'
+        'DoctrineORMModule',
+        'AssetManager',
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
